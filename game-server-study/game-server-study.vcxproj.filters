@@ -10,9 +10,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Clock.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -26,6 +23,9 @@
       <Filter>소스 파일\멀티쓰레딩</Filter>
     </ClCompile>
     <ClCompile Include="4_잠금순서의 규칙.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="5_병목현상 구현.cpp">
       <Filter>소스 파일\멀티쓰레딩</Filter>
     </ClCompile>
   </ItemGroup>

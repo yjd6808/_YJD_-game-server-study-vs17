@@ -23,8 +23,8 @@
     <ClCompile Include="2_쓰레드의효율성.cpp" />
     <ClCompile Include="3_교착상태.cpp" />
     <ClCompile Include="4_잠금순서의 규칙.cpp" />
+    <ClCompile Include="5_병목현상 구현.cpp" />
     <ClCompile Include="Clock.cpp" />
-    <ClCompile Include="소스.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clock.h" />
@@ -96,6 +96,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

@@ -3,10 +3,12 @@
 //#include <thread>
 //#include <vector>
 //#include <mutex>
+//#include <Windows.h>
 //
 //
 //using namespace std;
 //recursive_mutex mx;
+//recursive_mutex mx2;
 //
 //bool isPrime(int num) {
 //	if (num == 1 || num == 0)
@@ -36,11 +38,14 @@
 //
 //
 //void pushPrimeRange(vector<int>* primeVec, int min, int max) {
-//	
 //	for (int i = min; i < max; i++) {
 //		if (isPrime(i)) {
 //			lock_guard<recursive_mutex> locker(mx);
 //			primeVec->push_back(i);
+//
+//			//병목현상 구현
+//			/*lock_guard<recursive_mutex> locker2(mx2);
+//			Sleep(1);*/
 //		}
 //	}
 //}
@@ -68,6 +73,6 @@
 //
 //int main() {
 //
-//	countPrimesWithSingleThread(300000);
-//	countPrimesWithThreads(300000, 6);
+//	//countPrimesWithSingleThread(300000);
+//	countPrimesWithThreads(3000000, 6);
 //}
