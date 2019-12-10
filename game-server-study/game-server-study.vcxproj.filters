@@ -40,7 +40,13 @@
     <ClCompile Include="9_세마포어 구현.cpp">
       <Filter>소스 파일\멀티쓰레딩</Filter>
     </ClCompile>
-    <ClCompile Include="10_원자조작.cpp">
+    <ClCompile Include="10_조건변수주의사항.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="11_원자조작.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="12_멀티쓰레드 흔한 실수들.cpp">
       <Filter>소스 파일\멀티쓰레딩</Filter>
     </ClCompile>
   </ItemGroup>
