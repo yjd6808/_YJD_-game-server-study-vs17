@@ -19,11 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="10_원자조작.cpp" />
     <ClCompile Include="1_호출스택.cpp" />
     <ClCompile Include="2_쓰레드의효율성.cpp" />
     <ClCompile Include="3_교착상태.cpp" />
     <ClCompile Include="4_잠금순서의 규칙.cpp" />
     <ClCompile Include="5_병목현상 구현.cpp" />
+    <ClCompile Include="6_이벤트.cpp" />
+    <ClCompile Include="7_조건변수 사용하기.cpp" />
+    <ClCompile Include="8_세마포어.cpp" />
+    <ClCompile Include="9_세마포어 구현.cpp" />
     <ClCompile Include="Clock.cpp" />
   </ItemGroup>
   <ItemGroup>

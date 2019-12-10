@@ -28,6 +28,21 @@
     <ClCompile Include="5_병목현상 구현.cpp">
       <Filter>소스 파일\멀티쓰레딩</Filter>
     </ClCompile>
+    <ClCompile Include="6_이벤트.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="7_조건변수 사용하기.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="8_세마포어.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="9_세마포어 구현.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="10_원자조작.cpp">
+      <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Clock.h">

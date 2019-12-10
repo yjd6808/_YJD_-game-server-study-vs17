@@ -1,1 +1,1 @@
-git pull https://github.com/yjd6808/_YJD_-game-server-study.git
+git pull https://github.com/yjd6808/_YJD_-game-server-study-vs17.git
