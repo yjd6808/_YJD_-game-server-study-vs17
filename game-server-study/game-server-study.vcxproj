@@ -22,8 +22,11 @@
     <ClCompile Include="10_조건변수주의사항.cpp" />
     <ClCompile Include="11_원자조작.cpp" />
     <ClCompile Include="12_멀티쓰레드 흔한 실수들.cpp" />
+    <ClCompile Include="1_서버만들기.cpp" />
     <ClCompile Include="1_호출스택.cpp" />
     <ClCompile Include="2_쓰레드의효율성.cpp" />
+    <ClCompile Include="2_클라이언트만들기.cpp" />
+    <ClCompile Include="3_IOCP 커널객체 생성과 소켓연결.cpp" />
     <ClCompile Include="3_교착상태.cpp" />
     <ClCompile Include="4_잠금순서의 규칙.cpp" />
     <ClCompile Include="5_병목현상 구현.cpp" />
@@ -102,9 +105,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

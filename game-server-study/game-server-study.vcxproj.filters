@@ -8,6 +8,9 @@
     <Filter Include="소스 파일\멀티쓰레딩">
       <UniqueIdentifier>{f7d60964-b29e-478d-ab2f-206ec6379635}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\서버와클라이언트">
+      <UniqueIdentifier>{f1920141-11d1-47be-8db7-70d3c367f328}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Clock.cpp">
@@ -48,6 +51,15 @@
     </ClCompile>
     <ClCompile Include="12_멀티쓰레드 흔한 실수들.cpp">
       <Filter>소스 파일\멀티쓰레딩</Filter>
+    </ClCompile>
+    <ClCompile Include="1_서버만들기.cpp">
+      <Filter>소스 파일\서버와클라이언트</Filter>
+    </ClCompile>
+    <ClCompile Include="2_클라이언트만들기.cpp">
+      <Filter>소스 파일\서버와클라이언트</Filter>
+    </ClCompile>
+    <ClCompile Include="3_IOCP 커널객체 생성과 소켓연결.cpp">
+      <Filter>소스 파일\서버와클라이언트</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
