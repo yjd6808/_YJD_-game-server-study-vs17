@@ -23,21 +23,21 @@
 //		WSADATA w;
 //		WSAStartup(MAKEWORD(2, 2), &w);
 //
-//		SOCKET tcpServerSocket = WSASocket(PF_INET, SOCK_STREAM, 0, nullptr, 0, WSA_FLAG_OVERLAPPED);
+//		SOCKET Socket = WSASocket(PF_INET, SOCK_STREAM, 0, nullptr, 0, WSA_FLAG_OVERLAPPED);
 //		sockaddr_in tcpServerAddr = SetupEndPoint("127.0.0.1", 5782);
-//		if (bind(tcpServerSocket, (sockaddr*)&tcpServerAddr, sizeof(tcpServerAddr)) < 0)
+//		if (bind(Socket, (sockaddr*)&tcpServerAddr, sizeof(tcpServerAddr)) < 0)
 //		{
 //			cout << "bind failed:" << GetLastErrorAsString().c_str() << endl;
 //			throw exception(GetLastErrorAsString().c_str());
 //		}
 //
-//		listen(tcpServerSocket, 5000);
+//		listen(Socket, 5000);
 //
 //		//sockaddr_in addr;
 //		//int len;
 //		cout << "대기중입니다" << endl;
 //
-//		SOCKET client = accept(tcpServerSocket, nullptr, 0);
+//		SOCKET client = accept(Socket, nullptr, 0);
 //
 //		cout << client <<  "접속" << endl;
 //

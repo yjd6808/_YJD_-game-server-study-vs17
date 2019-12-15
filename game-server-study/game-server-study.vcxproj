@@ -22,28 +22,39 @@
     <ClCompile Include="10_조건변수주의사항.cpp" />
     <ClCompile Include="11_원자조작.cpp" />
     <ClCompile Include="12_멀티쓰레드 흔한 실수들.cpp" />
-    <ClCompile Include="1_서버만들기.cpp" />
+    <ClCompile Include="_1_서버만들기.cpp" />
     <ClCompile Include="1_호출스택.cpp" />
     <ClCompile Include="2_쓰레드의효율성.cpp" />
-    <ClCompile Include="2_클라이언트만들기.cpp" />
-    <ClCompile Include="3_IOCP 커널객체 생성과 소켓연결.cpp" />
+    <ClCompile Include="_2_클라이언트만들기.cpp" />
+    <ClCompile Include="_3_IOCP 커널객체 생성과 소켓연결.cpp" />
     <ClCompile Include="3_교착상태.cpp" />
-    <ClCompile Include="4_OverlappedIO이벤트기반통보_서버.cpp" />
+    <ClCompile Include="_4_OverlappedIO이벤트기반통보_서버.cpp" />
     <ClCompile Include="4_잠금순서의 규칙.cpp" />
-    <ClCompile Include="5_OverlappedIO이벤트기반통보_클라.cpp" />
+    <ClCompile Include="_5_OverlappedIO이벤트기반통보_클라.cpp" />
     <ClCompile Include="5_병목현상 구현.cpp" />
+    <ClCompile Include="_6_OverlappedIO_Callback기반통보_서버.h" />
     <ClCompile Include="6_이벤트.cpp" />
     <ClCompile Include="7_조건변수 사용하기.cpp" />
     <ClCompile Include="8_세마포어.cpp" />
     <ClCompile Include="9_세마포어 구현.cpp" />
     <ClCompile Include="Clock.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Socket.cpp" />
     <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="6_OverlappedIO_Callback기반통보_서버.h" />
     <ClInclude Include="Clock.h" />
+    <ClInclude Include="common_header.h" />
+    <ClInclude Include="Socket.h" />
     <ClInclude Include="Util.h" />
+    <ClInclude Include="_7_OverlappedIO_CallBack기반통보_클라.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="_8_OverlappedIO_CallBack기반통보_에코서버.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -103,7 +114,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
