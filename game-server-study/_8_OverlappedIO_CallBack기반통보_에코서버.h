@@ -124,7 +124,6 @@ private:
 			DWORD recvByteCount;
 			DWORD flag = 0;
 			
-			
 			WSARecv(client->socket, &recvContext->wsaBuf, 1, &recvByteCount, &flag, (OVERLAPPED*)recvContext, RecvCompletionRoutine);
 			DWORD errorID = WSAGetLastError();
 			if (errorID != 0 && errorID != WSA_IO_PENDING) {

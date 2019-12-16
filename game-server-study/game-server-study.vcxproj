@@ -47,11 +47,19 @@
     <ClInclude Include="common_header.h" />
     <ClInclude Include="Socket.h" />
     <ClInclude Include="Util.h" />
+    <ClInclude Include="_10_OverlappedIO_CallBack기반통보_채팅클라.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="_7_OverlappedIO_CallBack기반통보_클라.h">
       <SubType>
       </SubType>
     </ClInclude>
     <ClInclude Include="_8_OverlappedIO_CallBack기반통보_에코서버.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="_9_OverlappedIO_CallBack기반통보_채팅서버.h">
       <SubType>
       </SubType>
     </ClInclude>
