@@ -105,5 +105,8 @@
     <ClInclude Include="_10_OverlappedIO_CallBack기반통보_채팅클라.h">
       <Filter>소스 파일\서버와클라이언트</Filter>
     </ClInclude>
+    <ClInclude Include="_11_IOCP_채팅서버.h">
+      <Filter>소스 파일\서버와클라이언트</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

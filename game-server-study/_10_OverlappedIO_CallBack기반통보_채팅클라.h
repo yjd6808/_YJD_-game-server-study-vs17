@@ -82,6 +82,7 @@ private:
 			Message sMessage;
 			cin >> sMessage.message;
 			messageQueue.push(sMessage);
+
 		}
 	}
 
